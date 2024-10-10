@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  background: #f4f4f4;
+  color: black;
+}
+
+.content {
+  width: 90%;
+  max-width: 1538px;
+  background-color: #fff;
+  padding: 4rem;
+  min-width: 320px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 2.5rem 0;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.formGroup {
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mainHeading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: left;
+}
+
+.subText {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.inputContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem;
+  align-items: end;
+}
+
+.input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 18px;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #939393;
+}
+
+.buttonContainer, .continueButtonContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.continueButtonContainer{
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+.continueButton {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 227px;
+}
+
+.continueButton:hover {
+  background-color: #333;
+}
+
+.passwordHint {
+  font-size: 14px;
+  color: #666;
+}
+
+.agreement {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+}
+
+.accountText {
+  text-decoration: underline;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media (max-width: 1400px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .inputContainer {
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .agreement {
+    font-size: 7px;
+    line-height: 15px;
+  }
+
+  .continueButtonContainer{
+    justify-content: space-between;
+  }
+
+  .content {
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .mainHeading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .continueButton {
+    min-width: 113.5px;
+  }
+
+  .subText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .inputContainer {
+    align-items: start;
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .subText {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .continueButton {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

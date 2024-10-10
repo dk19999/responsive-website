@@ -51,7 +51,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = ({ title, articles }) => {
     <section className={styles.articleSection}>
       <h2 className={styles.articleSectionTitle}>{title}</h2>
       <div ref={carouselRef} className={styles.carousel}>
-        {articles.map((article, index) => (
+        {articles.map((article) => (
           <div key={article.id} className={styles.articleCard}>
             <img
               src={article.image_url}

@@ -114,10 +114,10 @@ const Login = () => {
               Dingoo will use your data to personalise and improve your Dingoo
               experience and to send you information about Dingoo. You can
               change your communication preferences anytime. We may use your
-              data as described in our Privacy Policy, including sharing it with
-              The Test of Companies. By clicking "Agree & Continue", you agree
-              to our Subscriber Agreement and acknowledge that you have read
-              our Privacy Policy and Collection Statement.
+              data as described in our Privacy Policy, including sharing it with
+              The Test of Companies. By clicking Agree & Continue, you agree to
+              our Subscriber Agreement and acknowledge that you have read our
+              Privacy Policy and Collection Statement.
             </p>
           </>
         )}

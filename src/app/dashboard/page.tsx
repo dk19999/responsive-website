@@ -9,13 +9,15 @@ async function fetchArticles() {
   try {
     const res = await api("");
     return res.data;
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
   return [];
 }
 
 const Dashboard = () => {
   const [articles, setArticles] = useState<Article[]>([]);
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     fetchArticles().then((res) => {
@@ -31,13 +33,15 @@ const Dashboard = () => {
   );
 
   const handleLogout = () => {
-    localStorage.clear()
-    router.push('/')
-  }
+    localStorage.clear();
+    router.push("/");
+  };
 
   return (
     <div className={styles.dashboardContainer}>
-      <button className={styles.logoutButton} onClick={handleLogout}>logout</button>
+      <button className={styles.logoutButton} onClick={handleLogout}>
+        logout
+      </button>
       <header className={styles.header}>
         <Image
           width={140}

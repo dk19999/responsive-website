@@ -47,7 +47,7 @@ const Login = () => {
             <div className={styles.formGroup}>
               <h1 className={styles.stepTitle}>STEP 1</h1>
               <h2 className={styles.mainHeading}>
-                Enter your email address to continue
+                Enter your email <p>address to continue</p>
               </h2>
               <p className={styles.subText}>
                 Log in to your account. If you don’t have one, you will be
